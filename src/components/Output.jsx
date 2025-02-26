@@ -29,13 +29,13 @@ function Output({ editorRef, language }) {
   };
 
   return (
-    <div className="flex-1/2">
+    <div className="w-full md:flex-1/2">
       <h1 className="mb-2 text-lg">Output</h1>
       <button onClick={runCode} className="btn btn-soft btn-success mb-4">
         {isLoading ? "Running..." : "Run Code"}
       </button>
       <div
-        className={`h-[84vh] p-2 border rounded-sm ${
+        className={`h-[50vh] md:h-[84vh] p-2 border rounded-sm ${
           isError ? "border-red-500" : "border-[#333]"
         }`}
       >

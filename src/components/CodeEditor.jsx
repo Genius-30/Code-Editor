@@ -27,11 +27,11 @@ function CodeEditor() {
 
   return (
     <div>
-      <div className="flex items-start gap-x-6">
-        <div className="flex-1/2">
+      <div className="flex flex-col md:flex-row items-start gap-6">
+        <div className="w-full md:flex-1/2">
           <LanguageSelector onSelect={onSelect} />
           <Editor
-            height="84vh"
+            className="h-[50vh] md:h-[84vh]"
             theme="vs-dark"
             language={language}
             defaultValue="// some comment"
